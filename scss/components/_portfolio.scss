@@ -1,0 +1,57 @@
+/* Portfolio Styles */
+
+.gallery {
+    color: $color-basedark;
+}
+
+#portfolio-div {
+    background-color: #fff;
+        @include mq(tablet) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @include mq(desktop) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+}
+
+.gallery {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+}
+
+.gallery h3 {
+    text-align: center;
+    font-family: $stack-roboto;
+}
+
+.gallery p {
+    padding: 20px;
+}
+
+.gallery li {
+    padding: 20px;
+}
+
+.col {
+    @include mq(tablet) {
+        display: inline-block;
+        width: 48%;
+        margin-right: -4px;
+        padding-left: $font-size3;
+        padding-right: $font-size3;
+        vertical-align: top;
+    }
+    @include mq(desktop) {
+        display: inline-block;
+        width: 30%;
+        margin-right: -4px;
+        padding-left: $font-size3;
+        padding-right: $font-size3;
+        vertical-align: top;
+    }
+}

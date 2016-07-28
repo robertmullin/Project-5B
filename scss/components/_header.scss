@@ -1,0 +1,146 @@
+/* Header Styles */
+
+.main-header {
+    padding-top: $font-size5;
+    background-color: $color-baselight;
+         @include mq(tablet) {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    h1 {
+        @include mq(desktop) {
+            float: left;
+            font-family: $stack-roboto;
+            text-transform: uppercase;
+            color: $color-basedark;
+            font-size: $font-size9;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+        
+}
+
+nav {
+    
+    li {
+        list-style: none;
+        padding: 2px;
+            @include mq(tablet) {
+                display: inline-block;
+                text-align: center;
+                font-size: $font-size4;
+                font-weight: normal;
+            }
+    }
+
+    a {
+        display: block;
+        margin-bottom: $font-size1;
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px 0;
+        color: $color-basedark;
+        font-size: $font-size9;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        padding: $font-size2;
+        background-color: $color-basetwo;
+            @include mq(tablet) {
+                background-color: $color-baselight; 
+                padding: $font-size4;
+            }
+    }
+
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-family: $stack-roboto;
+        text-transform: uppercase;
+        @include mq(tablet) {
+            margin: 0 auto;
+            line-height: $font-size8;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.menu {
+    @include mq(desktop) {
+        text-align: center;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0 10px 0;
+    }
+    
+    .menu nav {
+        @include mq(desktop) {
+            float: right;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* BIO Styles */
+
+#bio {
+    padding: 20px;
+    background-color: $color-baselight;
+    @include mq(tablet) {
+        padding: 20px 0;
+        display: block;
+        margin: 0 auto;
+        width: 90%; 
+    }
+    
+    @include mq(desktop) {
+        display: block;
+        margin: 0 auto;
+        width: 90%; 
+        padding: 20px 0; 
+        margin-top: 15px;
+        clear: both;
+    }
+}
+
+.column {
+    @include mq(tablet) {
+        display: inline-block;
+        width: 48%;
+        margin-right: -4px;
+        padding-left: $font-size3;
+        padding-right: $font-size3;
+        vertical-align: top;
+    }
+}
+
+.img-div {
+    padding-top: 30px;
+}
+
+.bio-img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.bio-blurb {
+    padding-top: 25px;
+    @include mq(desktop) {
+        padding: 20px;
+    }
+}

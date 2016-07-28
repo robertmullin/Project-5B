@@ -1,0 +1,33 @@
+// Descriptive color variables
+
+$color-base         : #28536c;
+$color-baselight    : #CDD8DF;
+$color-basedark     : #000B12;
+$color-basetwo      : #628499;
+
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-roboto     : 'Roboto', $stack-sans-serif;
+$stack-poppins    : 'Poppins', $stack-sans-serif;
+
+// Font Size
+
+$font-size1: .05em;
+$font-size2: .4em;
+$font-size3: .5em;
+$font-size4: .7em;
+$font-size5: 1em;
+$font-size6: 1.12em;
+$font-size7: 1.2em;
+$font-size8: 1.4em;
+$font-size9: 1.5em;
+
+
+// Media Query Breakpoints 
+
+$break-sm     : 1px;
+$break-md     : 768px;
+$break-lg     : 1024px;
+

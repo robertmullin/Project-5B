@@ -1,0 +1,98 @@
+/* Styles Guide
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Poppins', sans-serif;
+
+Color Pallette:
+
+Base:               #28536c
+Base light:         #CDD8DF
+Base dark:          #000B12
+Secondary light:    #628499
+
+*/
+
+/* Basic Styles */
+
+* {
+    text-decoration: none;
+    @include mq(tablet) {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    margin: 0;
+    @include mq(tablet) {
+        background-color: #fff;
+    }
+}
+
+h1 {
+    font-family: $stack-roboto;
+    text-align: center;
+    color: $color-basedark;
+}
+
+h2 {
+    @extend h1; 
+        @include mq(tablet) {
+            font-size: $font-size7;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 50px;
+        }
+}
+
+p {
+   font-family: $stack-poppins; 
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color-basedark;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    @include mq(tablet) {
+        width: 90%;
+    }
+    @include mq(desktop) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+   
+.background {
+    @include mq(tablet) {
+        background-color: $color-baselight; 
+        padding-bottom: 25px;
+    }
+}
+    
+    
+  
+
+
+
+
+

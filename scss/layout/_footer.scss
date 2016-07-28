@@ -1,0 +1,94 @@
+/* Footer Styles */
+
+.footer {
+    background-color: #fff;
+}
+
+.footer-name {
+    color: $color-base; 
+    font-size: $font-size7;
+    font-weight: bold;
+    float: left;
+    padding: 10px;
+    @include mq(tablet) {
+        padding: $font-size5;
+        font-family: $stack-roboto;
+        text-transform: uppercase;
+        color: $color-basedark;
+        font-size: $font-size6;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.footer-back {
+    color: $color-base; 
+    font-size: $font-size7;
+    font-weight: bold;
+    float: right;
+    padding: 10px;
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.footer-back a:visited {
+    color: $color-base;
+}
+
+.footer-nav {
+    display: none;
+    @include mq(tablet) {
+        display: block;
+        float: right;
+        margin: 0 auto;
+    }
+    
+    ul {
+        @include mq(tablet) {
+            margin: 0 auto;
+            line-height: $font-size8;
+        }
+    }
+
+    li {
+        @include mq(tablet) {
+            display: inline-block;
+            text-align: center;
+            font-size: $font-size4;
+            font-weight: normal;
+        }
+    }
+
+    a {
+        @include mq(tablet) {
+            background-color: #fff; 
+            padding: $font-size5;
+        }
+    }
+
+    a:hover {
+        @include mq(tablet) {
+            color: $color-baselight;
+        }
+    }
+
+}
+
+#contact-div h2 {
+    @include mq(tablet) {
+        font-size: $font-size5;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 50px;
+    }
+}
+
+#footer {
+    @include mq(tablet) {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        border-top: 2px solid $color-basetwo;
+    }
+}

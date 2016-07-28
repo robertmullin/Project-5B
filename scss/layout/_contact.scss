@@ -1,0 +1,45 @@
+/* Contact Styles */
+
+#contact-div {
+    display: block;
+    background-color: $color-baselight;
+    margin: 0 auto;
+    padding: 10px 0;
+    @include mq(tablet) {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    p {
+        @include mq(tablet) { 
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+
+#contact-div h2 {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px 0;
+        font-size: $font-size7;
+}
+
+#contact-div p {
+    text-align: center;
+}
+
+.phone,
+.email {
+    text-align: center;
+    font-weight: bold; 
+}
+
+em {
+    @include mq(tablet) {
+        font-weight: normal;
+        padding-right: 10px;
+    }
+}
