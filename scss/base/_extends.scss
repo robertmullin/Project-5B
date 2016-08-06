@@ -1,9 +1,6 @@
 // Clearfix
 
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+%margin {
+    margin: 0 auto;
 }
+

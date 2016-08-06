@@ -25,6 +25,14 @@
 
 nav {
     
+    @include mq(desktop) {
+        float: right;
+        text-align: right;
+        display: block;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+    
     li {
         list-style: none;
         padding: 2px;
@@ -34,13 +42,14 @@ nav {
                 font-size: $font-size4;
                 font-weight: normal;
             }
+            
     }
 
     a {
         display: block;
         margin-bottom: $font-size1;
         width: 90%;
-        margin: 0 auto;
+        @extend %margin;
         padding: 15px 0;
         color: $color-basedark;
         font-size: $font-size9;
@@ -72,6 +81,7 @@ nav {
             line-height: $font-size8;
             display: block;
             margin: 0 auto;
+            padding-bottom: 5px;
         }
     }
 }
@@ -100,7 +110,7 @@ nav {
     background-color: $color-baselight;
     @include mq(tablet) {
         padding: 20px 0;
-        display: block;
+        display: inline;
         margin: 0 auto;
         width: 90%; 
     }
@@ -117,7 +127,7 @@ nav {
 
 .column {
     @include mq(tablet) {
-        display: inline-block;
+        display: inline-table;
         width: 48%;
         margin-right: -4px;
         padding-left: $font-size3;
@@ -134,12 +144,17 @@ nav {
     width: 150px;
     height: 150px;
     display: block;
-    margin: 0 auto;
+    @extend %margin;
     border-radius: 50%;
 }
 
 .bio-blurb {
     padding-top: 25px;
+    @include mq(tablet) {
+        display: block;
+        float: right;
+        padding-right: 15px;
+    }
     @include mq(desktop) {
         padding: 20px;
     }

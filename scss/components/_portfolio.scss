@@ -21,7 +21,7 @@
 .gallery {
         display: block;
         width: 90%;
-        margin: 0 auto;
+        @extend %margin;
 }
 
 .gallery h3 {
@@ -39,7 +39,7 @@
 
 .col {
     @include mq(tablet) {
-        display: inline-block;
+        display: inline-table;
         width: 48%;
         margin-right: -4px;
         padding-left: $font-size3;

@@ -3,7 +3,7 @@
 #contact-div {
     display: block;
     background-color: $color-baselight;
-    margin: 0 auto;
+    @extend %margin;
     padding: 10px 0;
     @include mq(tablet) {
         display: block;
@@ -21,7 +21,7 @@
 
 #contact-div h2 {
         display: block;
-        margin: 0 auto;
+        @extend %margin;
         width: 90%;
         padding: 10px 0;
         font-size: $font-size7;
